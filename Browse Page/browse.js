@@ -3,6 +3,7 @@ console.log("Netflix : Cloned by Harshit Lakshakar");
 let thumbnail = Array.from(document.querySelectorAll('.thumbnails div'));
 let synopsisToggle = Array.from(document.querySelectorAll('.synopsis.jumbotron'));
 let close = Array.from(document.querySelectorAll('.synopsis .title img'));
+let vid = document.querySelector('.popup video');
 let i,j;
 
 document.querySelector('.description button').addEventListener("click", () => {
