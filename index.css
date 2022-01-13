@@ -1,0 +1,473 @@
+html {
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  background-color: #333;
+}
+
+.jumbotron {
+  margin: 0.4rem 0;
+  width: 100%;
+  border-radius: 0px;
+  background-color: black;
+  z-index: 1;
+}
+
+/*****************
+      Header
+*****************/
+
+header {
+  width: 100%;
+  height: 680px;
+  background-image: url("images/Netflix_BG.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+header svg {
+  width: 8rem;
+  fill: #e50914;
+}
+
+#overlay {
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+header .jumbotron {
+  position: absolute;
+  height: 680px;
+  margin-top: 0rem;
+  padding-top: 1rem;
+  background-color: transparent;
+  box-shadow: inset 0 0 100px 50px black;
+  z-index: 3;
+}
+
+.logo_container {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo_container button {
+  background-color: red;
+  padding: 0.4em 0;
+  color: white;
+  margin-left: 2rem;
+  width: 6rem;
+}
+
+.logo_container select {
+  margin: 1em 0;
+  padding: 0.4em 1em;
+  width: 120px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(126, 125, 125);
+  fill: rgb(126, 125, 125);
+  border-radius: 5px;
+}
+
+.text_container {
+  padding: 5rem;
+  width: 100%;
+  height: 622px;
+  display: flex;
+  flex-flow: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+header .jumbotron .text {
+  display: flex;
+  flex-flow: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+header .jumbotron .text .text1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.5rem;
+}
+
+header .jumbotron .text .text2 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+/*****************
+     Optform
+*****************/
+
+#optform {
+  width: 50%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#email {
+  width: 60%;
+  padding: 0.5rem 1rem;
+  border: 0px;
+}
+
+#optform a {
+  width: 40%;
+}
+
+#start {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  background-color: red;
+  color: white;
+  font-size: 1.5rem;
+  border: 0px;
+  font-weight: 400;
+}
+
+/*****************
+     Features
+*****************/
+
+.feature_text .text1 {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1em;
+}
+
+.feature_text .text2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.1em;
+}
+
+/****Feature 1****/
+
+#feature1 {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-areas: "feature_text tv";
+  grid-template-columns: 1fr 1fr;
+}
+
+#feature1 .feature_text {
+  padding-right: 0;
+  grid-area: feature_text;
+  max-width: 510px;
+  display: flex;
+  justify-content: right;
+}
+
+.tv {
+  grid-area: tv;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  justify-self: left;
+}
+
+.tv video {
+  max-width: 24%;
+  transform: translateY(-6px);
+  object-fit: contain;
+  position: absolute;
+}
+
+.tv img {
+  max-width: 70%;
+  object-fit: contain;
+  position: relative;
+}
+
+/****Feature 2****/
+
+#feature2 {
+  width: 100%;
+  padding-right: 4rem;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-areas: "mobile feature_text";
+  grid-template-columns: 1fr 1fr;
+}
+
+#feature2 .feature_text {
+  grid-area: feature_text;
+  max-width: 510px;
+}
+
+.mobile {
+  grid-area: mobile;
+  display: flex;
+  flex-flow: column;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  justify-self: left;
+}
+
+.mobile img {
+  width: 70%;
+}
+
+.mobile .download {
+  width: 300px;
+  height: auto;
+  display: grid;
+  grid-template-areas: "banner name name gif";
+  grid-template-columns: repeat(4, 1fr);
+  position: absolute;
+  background-color: #000;
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.mobile .download span {
+  line-height: 0px;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #0071eb;
+}
+
+#banner {
+  width: 70%;
+  object-fit: contain;
+  grid-area: banner;
+}
+
+.mobile .download p {
+  line-height: 1rem;
+  align-self: center;
+  grid-area: name;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+#gif {
+  width: 50%;
+  align-self: center;
+  justify-self: center;
+  object-fit: contain;
+  grid-area: gif;
+}
+
+/****Feature 3****/
+
+#feature3 {
+  width: 100%;
+}
+
+#feature3 .container {
+  width: 90%;
+  display: grid;
+  grid-template-areas: "feature_text devices";
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#feature3 .feature_text {
+  grid-area: feature_text;
+}
+
+#feature3 .devices {
+  grid-area: devices;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#feature3 video {
+  width: 22%;
+  align-self: start;
+  grid-area: device;
+  position: absolute;
+  transform: translateY(39px) translateX(-3px);
+}
+
+#feature3 img {
+  width: 90%;
+  grid-area: device;
+  position: relative;
+}
+
+/****Feature 4****/
+
+#feature4 {
+  width: 100%;
+}
+
+#feature4 .container {
+  padding: 0;
+  display: grid;
+  align-items: center;
+  grid-template-areas: "kids feature_text";
+  grid-template-columns: 1fr 1fr;
+}
+
+#feature4 .feature_text {
+  grid-area: feature_text;
+  max-width: 510px;
+  justify-self: left;
+}
+
+#feature4 img {
+  grid-area: kids;
+  max-width: 80%;
+  justify-self: center;
+}
+
+/*****************
+       FAQ
+*****************/
+
+.faq {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq_container {
+  width: 70%;
+  margin: 0;
+  display: flex;
+  flex-flow: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq .title {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.faq .btn {
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: #333;
+  border: 0px;
+  border-radius: 0px;
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq .btn p {
+  margin: 0;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.faq svg {
+  width: 26px;
+  height: 26px;
+  fill: white;
+  transform: rotate(45deg);
+}
+
+.faq .content {
+  display: none;
+  padding: 1rem 2rem;
+  width: inherit;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  background-color: #333;
+  border-top: 2px solid black;
+}
+
+.faq_box {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.faq .content.active {
+  display: block;
+}
+
+/*****************
+      Footer
+*****************/
+
+footer.jumbotron {
+  padding-top: 2.5rem;
+  padding-bottom: 2rem;
+  margin-bottom: 0rem;
+  color: rgb(126, 125, 125);
+}
+
+footer .container {
+  width: 80%;
+}
+
+footer.jumbotron p {
+  font-weight: 400;
+  margin-bottom: 2em;
+}
+
+footer.jumbotron a {
+  color: #e50914;
+  text-decoration: none;
+}
+
+footer.jumbotron ul {
+  list-style: none;
+  font-size: 0.8rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
+}
+
+footer.jumbotron li {
+  cursor: pointer;
+}
+
+footer.jumbotron .name {
+  font-size: 0.75rem;
+  margin: 2em 0;
+}
+
+footer.jumbotron select {
+  margin: 1em 0 1.5em 0;
+  padding: 0.5em 1em;
+  width: 120px;
+  background-color: black;
+  color: rgb(126, 125, 125);
+  fill: rgb(126, 125, 125);
+  border-radius: 5px;
+}
