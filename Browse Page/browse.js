@@ -11,14 +11,14 @@ document.querySelector('.description button').addEventListener("click", () => {
 
 document.querySelector('.popup img').addEventListener("click", () => {
   document.querySelector('.popup').classList.remove("active");
+  vid.pause();
 });
 document.querySelector('.popup video').addEventListener("mouseleave", () => {
   document.querySelector('.popup').addEventListener('click', () => {
     document.querySelector('.popup').classList.remove("active");
+  vid.pause();
   });
 });
-
-console.log(synopsisToggle);
 
 for(i=0; i<thumbnail.length; i++){
   let x=i;
