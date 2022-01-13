@@ -11,7 +11,7 @@ html {
 body {
   top: 0;
   left: 0;
-  background-image: url("../images/Netflix_BG.jpg");
+  background-image: url("../Home Page/images/Netflix_BG.jpg");
   background-size: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -153,6 +153,7 @@ body {
 
 .signup .clone {
   margin: 0;
+  display: block;
   font-size: 0.75rem;
 }
 
@@ -199,4 +200,40 @@ footer.jumbotron select {
   background-color: black;
   color: rgb(126, 125, 125);
   fill: rgb(126, 125, 125);
+}
+
+@media (max-width: 740px) {
+  body {
+    background-image: none;
+    background-color: #000;
+  }
+  #overlay {
+    background-color: rgba(0 0 0 0);
+  }
+  .showcase {
+    height: auto;
+    margin-bottom: 5px;
+    border-bottom: 5px solid #333;
+  }
+  .sign_in {
+    width: 100%;
+    height: auto;
+    padding: 2rem 2rem;
+    margin-bottom: 0;
+  }
+  footer {
+    padding: 2rem 2rem;
+  }
+  footer .container {
+    width: 100%;
+    margin: 0 0;
+  }
+  footer .container {
+    width: 100%;
+    margin: 0 0 0 0;
+    align-self: center;
+  }
+  footer.jumbotron ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

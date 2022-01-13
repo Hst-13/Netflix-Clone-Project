@@ -27,7 +27,7 @@ body {
 
 header {
   width: 100%;
-  height: 680px;
+  height: 690px;
   background-image: url("images/Netflix_BG.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -49,7 +49,7 @@ header svg {
 
 header .jumbotron {
   position: absolute;
-  height: 680px;
+  height: 690px;
   margin-top: 0rem;
   padding-top: 1rem;
   background-color: transparent;
@@ -85,8 +85,8 @@ header .jumbotron {
 
 .text_container {
   padding: 5rem;
+  margin-top: 3rem;
   width: 100%;
-  height: 622px;
   display: flex;
   flex-flow: column;
   flex-wrap: nowrap;
@@ -101,6 +101,7 @@ header .jumbotron .text {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 header .jumbotron .text .text1 {
@@ -136,6 +137,7 @@ header .jumbotron .text .text2 {
 
 #optform a {
   width: 40%;
+  text-align: center;
 }
 
 #start {
@@ -171,7 +173,7 @@ header .jumbotron .text .text2 {
   width: 100%;
   display: grid;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
   grid-template-areas: "feature_text tv";
   grid-template-columns: 1fr 1fr;
 }
@@ -179,9 +181,12 @@ header .jumbotron .text .text2 {
 #feature1 .feature_text {
   padding-right: 0;
   grid-area: feature_text;
-  max-width: 510px;
   display: flex;
   justify-content: right;
+}
+
+#feature1 .feature_text div {
+  max-width: 510px;
 }
 
 .tv {
@@ -242,7 +247,7 @@ header .jumbotron .text .text2 {
   height: auto;
   display: grid;
   grid-template-areas: "banner name name gif";
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, fr);
   position: absolute;
   background-color: #000;
   border: 2px solid #333;
@@ -416,6 +421,10 @@ header .jumbotron .text .text2 {
   margin-bottom: 0.5rem;
 }
 
+.faq .active svg {
+  transform: rotate(90deg);
+}
+
 .faq .content.active {
   display: block;
 }
@@ -470,4 +479,158 @@ footer.jumbotron select {
   color: rgb(126, 125, 125);
   fill: rgb(126, 125, 125);
   border-radius: 5px;
+}
+
+/*****************
+      Media
+     Queries
+*****************/
+
+@media (max-width: 948px) {
+  #optform {
+    width: 100%;
+    flex-flow: column;
+  }
+  #email {
+    width: 90%;
+    margin-bottom: 0.5rem;
+  }
+  #optform a {
+    width: 200px;
+  }
+}
+
+@media (max-width: 948px) {
+  .feature_text .text1 {
+    font-size: 2.5rem;
+  }
+
+  .feature_text .text2 {
+    font-size: 1rem;
+  }
+
+  #feature1 {
+    grid-template-areas: "feature_text" "tv";
+    grid-template-columns: 1fr;
+  }
+  #feature1 .feature_text {
+    justify-content: center;
+    max-width: 100%;
+    text-align: center;
+  }
+  .tv {
+    grid-area: tv;
+    justify-self: center;
+  }
+
+  .tv video {
+    max-width: 43%;
+    transform: translateY(-6px);
+  }
+
+  .tv img {
+    max-width: 80%;
+  }
+
+  #feature2 {
+    padding-right: 1rem;
+    grid-template-areas: "feature_text" "mobile ";
+    grid-template-columns: 1fr;
+  }
+  #feature2 .feature_text {
+    text-align: center;
+    max-width: 100%;
+  }
+  .mobile {
+    width: 90%;
+    justify-self: center;
+  }
+
+  #feature3 .container {
+    width: 100%;
+    grid-template-areas: "feature_text" "devices";
+    grid-template-columns: 1fr;
+  }
+  #feature3 .feature_text {
+    text-align: center;
+  }
+  #feature3 video {
+    width: 36%;
+    transform: translateY(32px) translateX(-3px);
+  }
+  #feature3 img {
+    width: 75%;
+  }
+
+  #feature4 .container {
+    grid-template-areas: "feature_text" "kids";
+    grid-template-columns: 1fr;
+  }
+  #feature4 .feature_text {
+    max-width: 100%;
+    text-align: center;
+  }
+  #feature4 img {
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 720px) {
+  .mobile .download {
+    width: 250px;
+  }
+  @media (max-width: 580px) {
+    .mobile .download {
+      width: 200px;
+    }
+  }
+  @media (max-width: 560px) {
+    .mobile .download {
+      width: 180px;
+      padding: 0.3rem;
+      margin-bottom: 0.75rem;
+      border-radius: 5px;
+    }
+  }
+}
+
+@media (max-width: 948px) {
+  footer .container {
+    width: 95%;
+  }
+}
+
+@media (max-width: 948px) {
+  .faq_container {
+    width: 90%;
+  }
+  .faq .title {
+    font-size: 2.5rem;
+  }
+  .faq .content {
+    line-height: 1.5rem;
+  }
+}
+
+@media (max-width: 610px) {
+  html {
+    font-size: 14px;
+  }
+  #start {
+    width: 70%;
+    height: 30px;
+  }
+  @media (max-width: 400px) {
+    html {
+      font-size: 10px;
+    }
+
+    header {
+      height: 480px;
+    }
+
+    header .jumbotron {
+      height: 480px;
+    }
+  }
 }

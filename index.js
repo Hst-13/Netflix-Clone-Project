@@ -7,15 +7,18 @@ let i,j;
 for(i=0; i<faq.length; i++){
   let x=i;
   faq[x].addEventListener('click', () => {
-  if(content[x].classList.contains('active')){
-    content[x].classList.remove("active");
-  }
-  else {
-    for(j=0; j<faq.length; j++){
-      let y=j;
-      content[y].classList.remove('active');
+    if(content[x].classList.contains('active')){
+      content[x].classList.remove('active');
+      faq[x].classList.remove('active');
     }
-    content[x].classList.add('active');
-   }
+    else {
+      for(j=0; j<faq.length; j++){
+        let y=j;
+        content[y].classList.remove('active');
+        faq[y].classList.remove("active");
+      }
+      content[x].classList.add('active');
+      faq[x].classList.add('active');
+    }
   });
 }

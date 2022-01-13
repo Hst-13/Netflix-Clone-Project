@@ -59,7 +59,7 @@ body {
 }
 
 .description {
-  max-width: 45%;
+  width: 45%;
   height: inherit;
   display: flex;
   flex-flow: column;
@@ -281,4 +281,42 @@ footer .clone {
 
 .popup.active {
   display: flex;
+}
+
+@media (max-width: 845px) {
+  .description {
+    width: 60%;
+  }
+  footer .container {
+    width: 100%;
+  }
+  footer.jumbotron ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 580px) {
+  html {
+    font-size: 14px;
+  }
+  .showcase {
+    height: 580px;
+  }
+  .showcase .description {
+    width: 80%;
+  }
+  .genre .thumbnails div {
+    width: 270px;
+    height: 150px;
+  }
+  .synopsis {
+    padding-top: 4rem;
+    background-size: cover;
+    background-position: center;
+    text-shadow: 2px 2px 4px black;
+  }
+  .synopsis .text {
+    width: 100%;
+    margin: 0 0 1rem 0;
+  }
 }

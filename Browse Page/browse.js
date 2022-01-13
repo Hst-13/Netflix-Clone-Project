@@ -17,7 +17,7 @@ document.querySelector('.popup img').addEventListener("click", () => {
 document.querySelector('.popup video').addEventListener("mouseleave", () => {
   document.querySelector('.popup').addEventListener('click', () => {
     document.querySelector('.popup').classList.remove("active");
-  vid.pause();
+    vid.pause();
   });
 });
 
