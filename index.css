@@ -381,6 +381,7 @@ header .jumbotron .text .text2 {
 }
 
 .faq .btn {
+  outline: none;
   width: 100%;
   padding: 1rem 2rem;
   background-color: #333;
@@ -575,31 +576,6 @@ footer.jumbotron select {
   }
 }
 
-@media (max-width: 720px) {
-  .mobile .download {
-    width: 250px;
-  }
-  @media (max-width: 580px) {
-    .mobile .download {
-      width: 200px;
-    }
-  }
-  @media (max-width: 560px) {
-    .mobile .download {
-      width: 180px;
-      padding: 0.3rem;
-      margin-bottom: 0.75rem;
-      border-radius: 5px;
-    }
-  }
-}
-
-@media (max-width: 948px) {
-  footer .container {
-    width: 95%;
-  }
-}
-
 @media (max-width: 948px) {
   .faq_container {
     width: 90%;
@@ -632,5 +608,54 @@ footer.jumbotron select {
     header .jumbotron {
       height: 480px;
     }
+  }
+}
+
+@media (max-width: 720px) {
+  .mobile .download {
+    width: 250px;
+  }
+  @media (max-width: 580px) {
+    .mobile .download {
+      width: 200px;
+    }
+  }
+  @media (max-width: 560px) {
+    .mobile .download {
+      width: 180px;
+      padding: 0.3rem;
+      margin-bottom: 0.75rem;
+      border-radius: 5px;
+    }
+
+    .faq .title {
+      font-size: 2rem;
+    }
+
+    .faq .btn {
+      padding: 0.5rem 1rem;
+    }
+    .faq .btn p {
+      font-size: 1.2rem;
+      text-align: left;
+    }
+
+    .faq svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .faq .content {
+      padding: 0.5rem 1rem;
+      width: inherit;
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+    }
+  }
+}
+
+@media (max-width: 948px) {
+  footer .container {
+    width: 95%;
   }
 }
