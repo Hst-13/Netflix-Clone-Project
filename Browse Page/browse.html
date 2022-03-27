@@ -1,603 +1,481 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="browse.css" />
-    <title>Frontend Project: Browse</title>
-  </head>
-  <body>
-    <section class="popup jumbotron">
-      <video src="./video.mp4" controls></video>
-      <img src="../icons/close.png" alt="close" />
-    </section>
 
-    <div class="showcase jumbotron">
-      <section class="logo_container">
-        <a href="../index.html">
-          <svg viewBox="0 0 111 30">
-            <path
-              d="M 105.062 14.2806 L 110.999 30 C 109.249 29.7497 107.5 29.4367 105.718 29.1555 L 102.374 20.4686 L 98.9371 28.4375 C 97.25 28.1563 95.5928 28.0617 93.9057 27.8433 L 99.9372 14.0932 L 94.4681 -5.68434e-14 L 99.5313 -5.68434e-14 L 102.593 7.87422 L 105.875 -5.68434e-14 L 110.999 -5.68434e-14 L 105.062 14.2806 Z M 90.4687 -5.68434e-14 L 85.875 -5.68434e-14 L 85.875 27.25 C 87.3746 27.3437 88.9371 27.4056 90.4687 27.593 L 90.4687 -5.68434e-14 Z M 81.9055 26.9369 C 77.7186 26.6557 73.5308 26.4064 69.2502 26.3117 L 69.2502 -5.68434e-14 L 73.9366 -5.68434e-14 L 73.9366 21.8746 C 76.6248 21.9374 79.312 22.1558 81.9055 22.2804 L 81.9055 26.9369 Z M 64.2497 10.6561 L 64.2497 15.3435 L 57.8442 15.3435 L 57.8442 25.9996 L 53.2187 25.9996 L 53.2187 -5.68434e-14 L 66.3436 -5.68434e-14 L 66.3436 4.68741 L 57.8442 4.68741 L 57.8442 10.6561 L 64.2497 10.6561 Z M 45.3435 4.68741 L 45.3435 26.2499 C 43.781 26.2499 42.1876 26.2499 40.6561 26.3117 L 40.6561 4.68741 L 35.8122 4.68741 L 35.8122 -5.68434e-14 L 50.2184 -5.68434e-14 L 50.2184 4.68741 L 45.3435 4.68741 Z M 30.7498 15.5928 C 28.6878 15.5928 26.2499 15.5928 24.5 15.6875 L 24.5 22.6563 C 27.25 22.4679 30 22.2495 32.781 22.1558 L 32.781 26.6557 L 19.8125 27.6877 L 19.8125 -5.68434e-14 L 32.781 -5.68434e-14 L 32.781 4.68741 L 24.5 4.68741 L 24.5 10.9992 C 26.3127 10.9992 29.0936 10.9054 30.7498 10.9054 L 30.7498 15.5928 Z M 4.78114 12.9684 L 4.78114 29.343 C 3.09401 29.5314 1.5934 29.7497 0 30 L 0 -5.68434e-14 L 4.46902 -5.68434e-14 L 10.5624 17.0316 L 10.5624 -5.68434e-14 L 15.2498 -5.68434e-14 L 15.2498 28.0617 C 13.5936 28.3438 11.9065 28.4375 10.1247 28.6868 L 4.78114 12.9684 Z"
-            ></path>
-          </svg>
-        </a>
-        <p>Films</p>
-        <p>Series</p>
-      </section>
-      <div class="description">
-        <p class="movie_title">Watch Joker Now</p>
-        <p>
-          Forever alone in a crowd, failed comedian Arthur Fleck seeks
-          connection as he walks the streets of Gotham City. Arthur wears two
-          masks, the one he paints for his day job as a clown, and the guise he
-          projects in a futile attempt to feel like he is part of the world
-          around him.
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="browse.css" />
+  <title>Frontend Project: Browse</title>
+</head>
+
+<body>
+  <section class="popup jumbotron">
+    <iframe src="https://www.youtube.com/embed/zAGVQLHvwOY" title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+    <img src="../icons/close.png" alt="close" />
+  </section>
+
+  <div class="showcase jumbotron">
+    <section class="logo_container">
+      <a href="../index.html">
+        <svg viewBox="0 0 111 30">
+          <path
+            d="M 105.062 14.2806 L 110.999 30 C 109.249 29.7497 107.5 29.4367 105.718 29.1555 L 102.374 20.4686 L 98.9371 28.4375 C 97.25 28.1563 95.5928 28.0617 93.9057 27.8433 L 99.9372 14.0932 L 94.4681 -5.68434e-14 L 99.5313 -5.68434e-14 L 102.593 7.87422 L 105.875 -5.68434e-14 L 110.999 -5.68434e-14 L 105.062 14.2806 Z M 90.4687 -5.68434e-14 L 85.875 -5.68434e-14 L 85.875 27.25 C 87.3746 27.3437 88.9371 27.4056 90.4687 27.593 L 90.4687 -5.68434e-14 Z M 81.9055 26.9369 C 77.7186 26.6557 73.5308 26.4064 69.2502 26.3117 L 69.2502 -5.68434e-14 L 73.9366 -5.68434e-14 L 73.9366 21.8746 C 76.6248 21.9374 79.312 22.1558 81.9055 22.2804 L 81.9055 26.9369 Z M 64.2497 10.6561 L 64.2497 15.3435 L 57.8442 15.3435 L 57.8442 25.9996 L 53.2187 25.9996 L 53.2187 -5.68434e-14 L 66.3436 -5.68434e-14 L 66.3436 4.68741 L 57.8442 4.68741 L 57.8442 10.6561 L 64.2497 10.6561 Z M 45.3435 4.68741 L 45.3435 26.2499 C 43.781 26.2499 42.1876 26.2499 40.6561 26.3117 L 40.6561 4.68741 L 35.8122 4.68741 L 35.8122 -5.68434e-14 L 50.2184 -5.68434e-14 L 50.2184 4.68741 L 45.3435 4.68741 Z M 30.7498 15.5928 C 28.6878 15.5928 26.2499 15.5928 24.5 15.6875 L 24.5 22.6563 C 27.25 22.4679 30 22.2495 32.781 22.1558 L 32.781 26.6557 L 19.8125 27.6877 L 19.8125 -5.68434e-14 L 32.781 -5.68434e-14 L 32.781 4.68741 L 24.5 4.68741 L 24.5 10.9992 C 26.3127 10.9992 29.0936 10.9054 30.7498 10.9054 L 30.7498 15.5928 Z M 4.78114 12.9684 L 4.78114 29.343 C 3.09401 29.5314 1.5934 29.7497 0 30 L 0 -5.68434e-14 L 4.46902 -5.68434e-14 L 10.5624 17.0316 L 10.5624 -5.68434e-14 L 15.2498 -5.68434e-14 L 15.2498 28.0617 C 13.5936 28.3438 11.9065 28.4375 10.1247 28.6868 L 4.78114 12.9684 Z">
+          </path>
+        </svg>
+      </a>
+      <p>Films</p>
+      <p>Series</p>
+    </section>
+    <div class="description">
+      <p class="movie_title">Watch Joker Now</p>
+      <p>
+        Forever alone in a crowd, failed comedian Arthur Fleck seeks
+        connection as he walks the streets of Gotham City. Arthur wears two
+        masks, the one he paints for his day job as a clown, and the guise he
+        projects in a futile attempt to feel like he is part of the world
+        around him.
+      </p>
+      <br />
+      <button class="btn btn-md">Play</button>
+    </div>
+  </div>
+
+  <section class="genre_list">
+    <div class="genre jumbotron">
+      <p class="title">Drama</p>
+      <div class="thumbnails scrollmenu">
+        <div style="background-image: url('./thumbnails/drama/small (5).jpg')">
+          <p>Fight Club</p>
+        </div>
+        <div style="background-image: url('./thumbnails/drama/small (6).jpg')">
+          <p>King's Speech</p>
+        </div>
+        <div style="background-image: url('./thumbnails/drama/small (7).jpg')">
+          <p>The Prestige</p>
+        </div>
+        <div style="background-image: url('./thumbnails/drama/small (8).jpg')">
+          <p>The Revenant</p>
+        </div>
+        <div style="background-image: url('./thumbnails/drama/small (9).jpg')">
+          <p>The Social Network</p>
+        </div>
+      </div>
+      <div class="synopsis jumbotron" style="background-image: url('./thumbnails/drama/small (5).jpg')">
+        <p class="title">
+          Fight Club <img src="../icons/close.png" alt="close" />
         </p>
-        <br />
+        <p class="text">
+          A disillusioned office worker finds an outlet for his pent-up
+          feelings when he and mysterious new pal Tyler Durden start a violent
+          underground society.
+        </p>
+        <button class="btn btn-md">Play</button>
+      </div>
+      <div class="synopsis jumbotron" style="background-image: url('./thumbnails/drama/small (6).jpg')">
+        <p class="title">
+          King's Speech <img src="../icons/close.png" alt="close" />
+        </p>
+        <p class="text">
+          King George VI tries to overcome his stammering problem with the
+          help of speech therapist Lionel Logue and makes himself worthy
+          enough to lead his country through World War II.
+        </p>
+        <button class="btn btn-md">Play</button>
+      </div>
+      <div class="synopsis jumbotron" style="background-image: url('./thumbnails/drama/small (7).jpg')">
+        <p class="title">
+          The Prestige <img src="../icons/close.png" alt="close" />
+        </p>
+        <p class="text">
+          Desperate to reveal each other's secrets, two rival magicians begin
+          to perform increasingly risky tricks -- which soon turn deadly.
+        </p>
+        <button class="btn btn-md">Play</button>
+      </div>
+      <div class="synopsis jumbotron" style="background-image: url('./thumbnails/drama/small (8).jpg')">
+        <p class="title">
+          The Revenant <img src="../icons/close.png" alt="close" />
+        </p>
+        <p class="text">
+          In the 1820s, a fur trapper struggles for survival to exact
+          retribution against a ruthless mercenary who left him to die along
+          the Missouri River.
+        </p>
+        <button class="btn btn-md">Play</button>
+      </div>
+      <div class="synopsis jumbotron" style="background-image: url('./thumbnails/drama/small (9).jpg')">
+        <p class="title">
+          The Social Network <img src="../icons/close.png" alt="close" />
+        </p>
+        <p class="text">
+          Harvard sophomore Mark Zuckerberg pursues an idea that propels him
+          to internet success, bringing in legal trouble and costing him
+          friendships.
+        </p>
         <button class="btn btn-md">Play</button>
       </div>
     </div>
 
-    <section class="genre_list">
-      <div class="genre jumbotron">
-        <p class="title">Drama</p>
-        <div class="thumbnails scrollmenu">
-          <div
-            style="background-image: url('./thumbnails/drama/small (5).jpg')"
-          >
-            <p>Fight Club</p>
-          </div>
-          <div
-            style="background-image: url('./thumbnails/drama/small (6).jpg')"
-          >
-            <p>King's Speech</p>
-          </div>
-          <div
-            style="background-image: url('./thumbnails/drama/small (7).jpg')"
-          >
-            <p>The Prestige</p>
-          </div>
-          <div
-            style="background-image: url('./thumbnails/drama/small (8).jpg')"
-          >
-            <p>The Revenant</p>
-          </div>
-          <div
-            style="background-image: url('./thumbnails/drama/small (9).jpg')"
-          >
-            <p>The Social Network</p>
-          </div>
+    <div class="genre jumbotron">
+      <p class="title">Romance</p>
+      <div class="thumbnails scrollmenu">
+        <div style="background-image: url('./thumbnails/romance/small (10).jpg')">
+          <p>A Star Is Born</p>
         </div>
-        <div
-          class="synopsis jumbotron"
-          style="background-image: url('./thumbnails/drama/small (5).jpg')"
-        >
-          <p class="title">
-            Fight Club <img src="../icons/close.png" alt="close" />
-          </p>
-          <p class="text">
-            A disillusioned office worker finds an outlet for his pent-up
-            feelings when he and mysterious new pal Tyler Durden start a violent
-            underground society.
-          </p>
-          <button class="btn btn-md">Play</button>
+        <div style="background-image: url('./thumbnails/romance/small (11).jpg')">
+          <p>Blue Valentine</p>
         </div>
-        <div
-          class="synopsis jumbotron"
-          style="background-image: url('./thumbnails/drama/small (6).jpg')"
-        >
-          <p class="title">
-            King's Speech <img src="../icons/close.png" alt="close" />
-          </p>
-          <p class="text">
-            King George VI tries to overcome his stammering problem with the
-            help of speech therapist Lionel Logue and makes himself worthy
-            enough to lead his country through World War II.
-          </p>
-          <button class="btn btn-md">Play</button>
+        <div style="background-image: url('./thumbnails/romance/small (12).jpg')">
+          <p>La La Land</p>
         </div>
-        <div
-          class="synopsis jumbotron"
-          style="background-image: url('./thumbnails/drama/small (7).jpg')"
-        >
-          <p class="title">
-            The Prestige <img src="../icons/close.png" alt="close" />
-          </p>
-          <p class="text">
-            Desperate to reveal each other's secrets, two rival magicians begin
-            to perform increasingly risky tricks -- which soon turn deadly.
-          </p>
-          <button class="btn btn-md">Play</button>
+        <div style="background-image: url('./thumbnails/romance/small (13).jpg')">
+          <p>The Notebook</p>
         </div>
-        <div
-          class="synopsis jumbotron"
-          style="background-image: url('./thumbnails/drama/small (8).jpg')"
-        >
-          <p class="title">
-            The Revenant <img src="../icons/close.png" alt="close" />
-          </p>
-          <p class="text">
-            In the 1820s, a fur trapper struggles for survival to exact
-            retribution against a ruthless mercenary who left him to die along
-            the Missouri River.
-          </p>
-          <button class="btn btn-md">Play</button>
-        </div>
-        <div
-          class="synopsis jumbotron"
-          style="background-image: url('./thumbnails/drama/small (9).jpg')"
-        >
-          <p class="title">
-            The Social Network <img src="../icons/close.png" alt="close" />
-          </p>
-          <p class="text">
-            Harvard sophomore Mark Zuckerberg pursues an idea that propels him
-            to internet success, bringing in legal trouble and costing him
-            friendships.
-          </p>
-          <button class="btn btn-md">Play</button>
+        <div style="background-image: url('./thumbnails/romance/small (14).jpg')">
+          <p>Titanic</p>
         </div>
       </div>
-
-      <div class="genre jumbotron">
-        <p class="title">Romance</p>
-        <div class="thumbnails scrollmenu">
-          <div
-            style="background-image: url('./thumbnails/romance/small (10).jpg')"
-          >
-            <p>A Star Is Born</p>
-          </div>
-          <div
-            style="background-image: url('./thumbnails/romance/small (11).jpg')"
-          >
-            <p>Blue Valentine</p>
-          </div>
-          <div
-            style="background-image: url('./thumbnails/romance/small (12).jpg')"
-          >
-            <p>La La Land</p>
-          </div>
-          <div
-            style="background-image: url('./thumbnails/romance/small (13).jpg')"
-          >
-            <p>The Notebook</p>
-          </div>
-          <div
-            style="background-image: url('./thumbnails/romance/small (14).jpg')"
-          >
-            <p>Titanic</p>
-          </div>
-        </div>
-        <div
-          class="synopsis jumbotron"
-          style="background-image: url('./thumbnails/romance/small (10).jpg')"
-        >
-          <p class="title">
-            A Star Is Born <img src="../icons/close.png" alt="close" />
-          </p>
-          <p class="text">
-            When an aspiring singer develops a passionate relationship with a
-            seasoned musician, her career begins to soar as his vices trigger a
-            downward spiral.
-          </p>
-          <button class="btn btn-md">Play</button>
-        </div>
-        <div
-          class="synopsis jumbotron"
-          style="background-image: url('./thumbnails/romance/small (11).jpg')"
-        >
-          <p class="title">
-            Blue Valentine <img src="../icons/close.png" alt="close" />
-          </p>
-          <p class="text">
-            As Cindy and Dean muddle through their languishing marriage, they
-            hearken back to the golden days when life was filled with
-            possibility and romance.
-          </p>
-          <button class="btn btn-md">Play</button>
-        </div>
-        <div
-          class="synopsis jumbotron"
-          style="background-image: url('./thumbnails/romance/small (12).jpg')"
-        >
-          <p class="title">
-            La La Land <img src="../icons/close.png" alt="close" />
-          </p>
-          <p class="text">
-            Career aspirations run up against bittersweet romance in modern-day
-            Los Angeles, as two artists face a heartbreaking dilemma.
-          </p>
-          <button class="btn btn-md">Play</button>
-        </div>
-        <div
-          class="synopsis jumbotron"
-          style="background-image: url('./thumbnails/romance/small (13).jpg')"
-        >
-          <p class="title">
-            The Notebook <img src="../icons/close.png" alt="close" />
-          </p>
-          <p class="text">
-            Two young lovers are torn apart by war and class differences in the
-            1940s in this adaptation of Nicholas Sparks's best-selling novel.
-          </p>
-          <button class="btn btn-md">Play</button>
-        </div>
-        <div
-          class="synopsis jumbotron"
-          style="background-image: url('./thumbnails/romance/small (14).jpg')"
-        >
-          <p class="title">
-            Titanic <img src="../icons/close.png" alt="close" />
-          </p>
-          <p class="text">
-            James Cameron's "Titanic" is an epic, action-packed romance set
-            against the ill-fated maiden voyage of the R.M.S. Titanic; the pride
-            and joy of the White Star Line and, at the time, the largest moving
-            object ever built.
-          </p>
-          <button class="btn btn-md">Play</button>
-        </div>
+      <div class="synopsis jumbotron" style="background-image: url('./thumbnails/romance/small (10).jpg')">
+        <p class="title">
+          A Star Is Born <img src="../icons/close.png" alt="close" />
+        </p>
+        <p class="text">
+          When an aspiring singer develops a passionate relationship with a
+          seasoned musician, her career begins to soar as his vices trigger a
+          downward spiral.
+        </p>
+        <button class="btn btn-md">Play</button>
       </div>
+      <div class="synopsis jumbotron" style="background-image: url('./thumbnails/romance/small (11).jpg')">
+        <p class="title">
+          Blue Valentine <img src="../icons/close.png" alt="close" />
+        </p>
+        <p class="text">
+          As Cindy and Dean muddle through their languishing marriage, they
+          hearken back to the golden days when life was filled with
+          possibility and romance.
+        </p>
+        <button class="btn btn-md">Play</button>
+      </div>
+      <div class="synopsis jumbotron" style="background-image: url('./thumbnails/romance/small (12).jpg')">
+        <p class="title">
+          La La Land <img src="../icons/close.png" alt="close" />
+        </p>
+        <p class="text">
+          Career aspirations run up against bittersweet romance in modern-day
+          Los Angeles, as two artists face a heartbreaking dilemma.
+        </p>
+        <button class="btn btn-md">Play</button>
+      </div>
+      <div class="synopsis jumbotron" style="background-image: url('./thumbnails/romance/small (13).jpg')">
+        <p class="title">
+          The Notebook <img src="../icons/close.png" alt="close" />
+        </p>
+        <p class="text">
+          Two young lovers are torn apart by war and class differences in the
+          1940s in this adaptation of Nicholas Sparks's best-selling novel.
+        </p>
+        <button class="btn btn-md">Play</button>
+      </div>
+      <div class="synopsis jumbotron" style="background-image: url('./thumbnails/romance/small (14).jpg')">
+        <p class="title">
+          Titanic <img src="../icons/close.png" alt="close" />
+        </p>
+        <p class="text">
+          James Cameron's "Titanic" is an epic, action-packed romance set
+          against the ill-fated maiden voyage of the R.M.S. Titanic; the pride
+          and joy of the White Star Line and, at the time, the largest moving
+          object ever built.
+        </p>
+        <button class="btn btn-md">Play</button>
+      </div>
+    </div>
 
-      <div class="genre jumbotron">
-        <p class="title">Suspense</p>
-        <div class="thumbnails scrollmenu">
-          <div
-            style="
+    <div class="genre jumbotron">
+      <p class="title">Suspense</p>
+      <div class="thumbnails scrollmenu">
+        <div style="
               background-image: url('./thumbnails/suspense/small (15).jpg');
-            "
-          >
-            <p>Gone Girl</p>
-          </div>
-          <div
-            style="
+            ">
+          <p>Gone Girl</p>
+        </div>
+        <div style="
               background-image: url('./thumbnails/suspense/small (16).jpg');
-            "
-          >
-            <p>Prisoners</p>
-          </div>
-          <div
-            style="
+            ">
+          <p>Prisoners</p>
+        </div>
+        <div style="
               background-image: url('./thumbnails/suspense/small (17).jpg');
-            "
-          >
-            <p>Seven</p>
-          </div>
-          <div
-            style="
+            ">
+          <p>Seven</p>
+        </div>
+        <div style="
               background-image: url('./thumbnails/suspense/small (18).jpg');
-            "
-          >
-            <p>Shutter Island</p>
-          </div>
-          <div
-            style="
+            ">
+          <p>Shutter Island</p>
+        </div>
+        <div style="
               background-image: url('./thumbnails/suspense/small (19).jpg');
-            "
-          >
-            <p>Zodiac</p>
-          </div>
-        </div>
-        <div
-          class="synopsis jumbotron"
-          style="background-image: url('./thumbnails/suspense/small (15).jpg')"
-        >
-          <p class="title">
-            Gone Girl <img src="../icons/close.png" alt="close" />
-          </p>
-          <p class="text">
-            With his wife's disappearance having become the focus of an intense
-            media circus, a man sees the spotlight turned on him when it's
-            suspected that he may not be innocent.
-          </p>
-          <button class="btn btn-md">Play</button>
-        </div>
-        <div
-          class="synopsis jumbotron"
-          style="background-image: url('./thumbnails/suspense/small (16).jpg')"
-        >
-          <p class="title">
-            Prisoners <img src="../icons/close.png" alt="close" />
-          </p>
-          <p class="text">
-            When the police take time to find Keller Dover's daughter and her
-            friend, he decides to go on a search himself. His desperation leads
-            him closer to finding the truth and also jeopardises his own life.
-          </p>
-          <button class="btn btn-md">Play</button>
-        </div>
-        <div
-          class="synopsis jumbotron"
-          style="background-image: url('./thumbnails/suspense/small (17).jpg')"
-        >
-          <p class="title">
-            Seven <img src="../icons/close.png" alt="close" />
-          </p>
-          <p class="text">
-            A seasoned homicide detective and his new partner are on a desperate
-            hunt for a killer whose gruesome crimes are based on the Seven
-            Deadly Sins.
-          </p>
-          <button class="btn btn-md">Play</button>
-        </div>
-        <div
-          class="synopsis jumbotron"
-          style="background-image: url('./thumbnails/suspense/small (18).jpg')"
-        >
-          <p class="title">
-            Shutter Island <img src="../icons/close.png" alt="close" />
-          </p>
-          <p class="text">
-            A U.S. marshal's troubling visions compromise his investigation into
-            the disappearance of a patient from a hospital for the criminally
-            insane.
-          </p>
-          <button class="btn btn-md">Play</button>
-        </div>
-        <div
-          class="synopsis jumbotron"
-          style="background-image: url('./thumbnails/suspense/small (19).jpg')"
-        >
-          <p class="title">
-            Zodiac <img src="../icons/close.png" alt="close" />
-          </p>
-          <p class="text">
-            A political cartoonist, a crime reporter and a pair of cops
-            investigate San Fransisco’s infamous Zodiac Killer in this thriller
-            based on a true story.
-          </p>
-          <button class="btn btn-md">Play</button>
+            ">
+          <p>Zodiac</p>
         </div>
       </div>
+      <div class="synopsis jumbotron" style="background-image: url('./thumbnails/suspense/small (15).jpg')">
+        <p class="title">
+          Gone Girl <img src="../icons/close.png" alt="close" />
+        </p>
+        <p class="text">
+          With his wife's disappearance having become the focus of an intense
+          media circus, a man sees the spotlight turned on him when it's
+          suspected that he may not be innocent.
+        </p>
+        <button class="btn btn-md">Play</button>
+      </div>
+      <div class="synopsis jumbotron" style="background-image: url('./thumbnails/suspense/small (16).jpg')">
+        <p class="title">
+          Prisoners <img src="../icons/close.png" alt="close" />
+        </p>
+        <p class="text">
+          When the police take time to find Keller Dover's daughter and her
+          friend, he decides to go on a search himself. His desperation leads
+          him closer to finding the truth and also jeopardises his own life.
+        </p>
+        <button class="btn btn-md">Play</button>
+      </div>
+      <div class="synopsis jumbotron" style="background-image: url('./thumbnails/suspense/small (17).jpg')">
+        <p class="title">
+          Seven <img src="../icons/close.png" alt="close" />
+        </p>
+        <p class="text">
+          A seasoned homicide detective and his new partner are on a desperate
+          hunt for a killer whose gruesome crimes are based on the Seven
+          Deadly Sins.
+        </p>
+        <button class="btn btn-md">Play</button>
+      </div>
+      <div class="synopsis jumbotron" style="background-image: url('./thumbnails/suspense/small (18).jpg')">
+        <p class="title">
+          Shutter Island <img src="../icons/close.png" alt="close" />
+        </p>
+        <p class="text">
+          A U.S. marshal's troubling visions compromise his investigation into
+          the disappearance of a patient from a hospital for the criminally
+          insane.
+        </p>
+        <button class="btn btn-md">Play</button>
+      </div>
+      <div class="synopsis jumbotron" style="background-image: url('./thumbnails/suspense/small (19).jpg')">
+        <p class="title">
+          Zodiac <img src="../icons/close.png" alt="close" />
+        </p>
+        <p class="text">
+          A political cartoonist, a crime reporter and a pair of cops
+          investigate San Fransisco’s infamous Zodiac Killer in this thriller
+          based on a true story.
+        </p>
+        <button class="btn btn-md">Play</button>
+      </div>
+    </div>
 
-      <div class="genre jumbotron">
-        <p class="title">Thriller</p>
-        <div class="thumbnails scrollmenu">
-          <div
-            style="
+    <div class="genre jumbotron">
+      <p class="title">Thriller</p>
+      <div class="thumbnails scrollmenu">
+        <div style="
               background-image: url('./thumbnails/thriller/small (20).jpg');
-            "
-          >
-            <p>A Quiet Place</p>
-          </div>
-          <div
-            style="
+            ">
+          <p>A Quiet Place</p>
+        </div>
+        <div style="
               background-image: url('./thumbnails/thriller/small (21).jpg');
-            "
-          >
-            <p>Black Swan</p>
-          </div>
-          <div
-            style="
+            ">
+          <p>Black Swan</p>
+        </div>
+        <div style="
               background-image: url('./thumbnails/thriller/small (22).jpg');
-            "
-          >
-            <p>Joker</p>
-          </div>
-          <div
-            style="
+            ">
+          <p>Joker</p>
+        </div>
+        <div style="
               background-image: url('./thumbnails/thriller/small (23).jpg');
-            "
-          >
-            <p>Nightcrawler</p>
-          </div>
-          <div
-            style="
+            ">
+          <p>Nightcrawler</p>
+        </div>
+        <div style="
               background-image: url('./thumbnails/thriller/small (24).jpg');
-            "
-          >
-            <p>The Silence of The Lambs</p>
-          </div>
-        </div>
-        <div
-          class="synopsis jumbotron"
-          style="background-image: url('./thumbnails/thriller/small (20).jpg')"
-        >
-          <p class="title">
-            A Quiet Place <img src="../icons/close.png" alt="close" />
-          </p>
-          <p class="text">
-            Cut off from the rest of the world, a tight-knit family lives in
-            constant fear of making any sound that will attract terrifying alien
-            creatures.
-          </p>
-          <button class="btn btn-md">Play</button>
-        </div>
-        <div
-          class="synopsis jumbotron"
-          style="background-image: url('./thumbnails/thriller/small (21).jpg')"
-        >
-          <p class="title">
-            Black Swan <img src="../icons/close.png" alt="close" />
-          </p>
-          <p class="text">
-            A ballet dancer wins the lead in "Swan Lake" and is perfect for the
-            role of the delicate White Swan - Princess Odette - but slowly loses
-            her mind as she becomes more and more like Odile, the Black Swan.
-          </p>
-          <button class="btn btn-md">Play</button>
-        </div>
-        <div
-          class="synopsis jumbotron"
-          style="background-image: url('./thumbnails/thriller/small (22).jpg')"
-        >
-          <p class="title">
-            Joker <img src="../icons/close.png" alt="close" />
-          </p>
-          <p class="text">
-            In 1981 Gotham City, a struggling, mentally ill comic battles to be
-            seen. His life takes a dark, gut-wrenching turn after he lashes back
-            at attackers.
-          </p>
-          <button class="btn btn-md">Play</button>
-        </div>
-        <div
-          class="synopsis jumbotron"
-          style="background-image: url('./thumbnails/thriller/small (23).jpg')"
-        >
-          <p class="title">
-            Nightcrawler <img src="../icons/close.png" alt="close" />
-          </p>
-          <p class="text">
-            A young hustler finds success trolling the streets of Los Angeles to
-            film disasters and death. But the darkness he captures starts to
-            take hold of him.
-          </p>
-          <button class="btn btn-md">Play</button>
-        </div>
-        <div
-          class="synopsis jumbotron"
-          style="background-image: url('./thumbnails/thriller/small (24).jpg')"
-        >
-          <p class="title">
-            The Silence of The Lambs
-            <img src="../icons/close.png" alt="close" />
-          </p>
-          <p class="text">
-            A young F.B.I. cadet must receive the help of an incarcerated and
-            manipulative cannibal killer to help catch another serial killer, a
-            madman who skins his victims.
-          </p>
-          <button class="btn btn-md">Play</button>
+            ">
+          <p>The Silence of The Lambs</p>
         </div>
       </div>
-
-      <div class="genre jumbotron">
-        <p class="title">Children</p>
-        <div class="thumbnails scrollmenu">
-          <div style="background-image: url('./thumbnails/children/small.jpg')">
-            <p>Despicable Me</p>
-          </div>
-          <div
-            style="background-image: url('./thumbnails/children/small (1).jpg')"
-          >
-            <p>Frozen</p>
-          </div>
-          <div
-            style="background-image: url('./thumbnails/children/small (2).jpg')"
-          >
-            <p>Hotel Transylvania</p>
-          </div>
-          <div
-            style="background-image: url('./thumbnails/children/small (3).jpg')"
-          >
-            <p>Spirited Away</p>
-          </div>
-          <div
-            style="background-image: url('./thumbnails/children/small (4).jpg')"
-          >
-            <p>Up</p>
-          </div>
-        </div>
-        <div
-          class="synopsis jumbotron"
-          style="background-image: url('./thumbnails/children/small.jpg')"
-        >
-          <p class="title">
-            Despicable Me <img src="../icons/close.png" alt="close" />
-          </p>
-          <p class="text">
-            Villainous Gru hatches a plan to steal the moon from the sky. But he
-            has a tough time staying on task after three orphans land in his
-            care.
-          </p>
-          <button class="btn btn-md">Play</button>
-        </div>
-        <div
-          class="synopsis jumbotron"
-          style="background-image: url('./thumbnails/children/small (1).jpg')"
-        >
-          <p class="title">
-            Frozen <img src="../icons/close.png" alt="close" />
-          </p>
-          <p class="text">
-            When the newly crowned Queen Elsa accidentally uses her power to
-            turn things into ice to curse her home in infinite winter, her
-            sister Anna teams up with a mountain man, his playful reindeer, and
-            a snowman to change the weather condition.
-          </p>
-          <button class="btn btn-md">Play</button>
-        </div>
-        <div
-          class="synopsis jumbotron"
-          style="background-image: url('./thumbnails/children/small (2).jpg')"
-        >
-          <p class="title">
-            Hotel Transylvania <img src="../icons/close.png" alt="close" />
-          </p>
-          <p class="text">
-            Hotel Transylvania owner Dracula pulls double duty as an
-            overprotective dad when an unwelcome suitor shows interest in his
-            teenage daughter.
-          </p>
-          <button class="btn btn-md">Play</button>
-        </div>
-        <div
-          class="synopsis jumbotron"
-          style="background-image: url('./thumbnails/children/small (3).jpg')"
-        >
-          <p class="title">
-            Spirited Away <img src="../icons/close.png" alt="close" />
-          </p>
-          <p class="text">
-            Chihiro wanders into a magical world where a witch rules -- and
-            those who disobey her are turned into animals.
-          </p>
-          <button class="btn btn-md">Play</button>
-        </div>
-        <div
-          class="synopsis jumbotron"
-          style="background-image: url('./thumbnails/children/small (4).jpg')"
-        >
-          <p class="title">Up <img src="../icons/close.png" alt="close" /></p>
-          <p class="text">
-            Seventy-eight year old Carl Fredricksen travels to Paradise Falls in
-            his home equipped with balloons, inadvertently taking a young
-            stowaway.
-          </p>
-          <button class="btn btn-md">Play</button>
-        </div>
-      </div>
-    </section>
-
-    <footer class="jumbotron">
-      <div class="container">
-        <p>
-          Questions?
-          <a href="https://www.netflix.com" target="_blank">Original Website</a>
+      <div class="synopsis jumbotron" style="background-image: url('./thumbnails/thriller/small (20).jpg')">
+        <p class="title">
+          A Quiet Place <img src="../icons/close.png" alt="close" />
         </p>
-
-        <ul>
-          <li>FAQ</li>
-          <li>Account</li>
-          <li>Help Centre</li>
-          <li>Media Centre</li>
-          <li>Investor Relations</li>
-          <li>Jobs</li>
-          <li>Ways to Watch</li>
-          <li>Terms of Use</li>
-          <li>Privacy</li>
-          <li>Cookie Preferences</li>
-          <li>Corporate Information</li>
-          <li>Contact Us</li>
-          <li>Speed Test</li>
-          <li>Legal Notices</li>
-          <li>Only on Netflix</li>
-        </ul>
-        <p class="clone">
-          Netflix : Cloned by Harshit Lakshakar <br />as Frontend Project.
-          <br />
-          Email : harshit130902@gmail.com
+        <p class="text">
+          Cut off from the rest of the world, a tight-knit family lives in
+          constant fear of making any sound that will attract terrifying alien
+          creatures.
         </p>
+        <button class="btn btn-md">Play</button>
       </div>
-    </footer>
-    <script type="text/javascript" src="browse.js"></script>
-  </body>
+      <div class="synopsis jumbotron" style="background-image: url('./thumbnails/thriller/small (21).jpg')">
+        <p class="title">
+          Black Swan <img src="../icons/close.png" alt="close" />
+        </p>
+        <p class="text">
+          A ballet dancer wins the lead in "Swan Lake" and is perfect for the
+          role of the delicate White Swan - Princess Odette - but slowly loses
+          her mind as she becomes more and more like Odile, the Black Swan.
+        </p>
+        <button class="btn btn-md">Play</button>
+      </div>
+      <div class="synopsis jumbotron" style="background-image: url('./thumbnails/thriller/small (22).jpg')">
+        <p class="title">
+          Joker <img src="../icons/close.png" alt="close" />
+        </p>
+        <p class="text">
+          In 1981 Gotham City, a struggling, mentally ill comic battles to be
+          seen. His life takes a dark, gut-wrenching turn after he lashes back
+          at attackers.
+        </p>
+        <button class="btn btn-md">Play</button>
+      </div>
+      <div class="synopsis jumbotron" style="background-image: url('./thumbnails/thriller/small (23).jpg')">
+        <p class="title">
+          Nightcrawler <img src="../icons/close.png" alt="close" />
+        </p>
+        <p class="text">
+          A young hustler finds success trolling the streets of Los Angeles to
+          film disasters and death. But the darkness he captures starts to
+          take hold of him.
+        </p>
+        <button class="btn btn-md">Play</button>
+      </div>
+      <div class="synopsis jumbotron" style="background-image: url('./thumbnails/thriller/small (24).jpg')">
+        <p class="title">
+          The Silence of The Lambs
+          <img src="../icons/close.png" alt="close" />
+        </p>
+        <p class="text">
+          A young F.B.I. cadet must receive the help of an incarcerated and
+          manipulative cannibal killer to help catch another serial killer, a
+          madman who skins his victims.
+        </p>
+        <button class="btn btn-md">Play</button>
+      </div>
+    </div>
+
+    <div class="genre jumbotron">
+      <p class="title">Children</p>
+      <div class="thumbnails scrollmenu">
+        <div style="background-image: url('./thumbnails/children/small.jpg')">
+          <p>Despicable Me</p>
+        </div>
+        <div style="background-image: url('./thumbnails/children/small (1).jpg')">
+          <p>Frozen</p>
+        </div>
+        <div style="background-image: url('./thumbnails/children/small (2).jpg')">
+          <p>Hotel Transylvania</p>
+        </div>
+        <div style="background-image: url('./thumbnails/children/small (3).jpg')">
+          <p>Spirited Away</p>
+        </div>
+        <div style="background-image: url('./thumbnails/children/small (4).jpg')">
+          <p>Up</p>
+        </div>
+      </div>
+      <div class="synopsis jumbotron" style="background-image: url('./thumbnails/children/small.jpg')">
+        <p class="title">
+          Despicable Me <img src="../icons/close.png" alt="close" />
+        </p>
+        <p class="text">
+          Villainous Gru hatches a plan to steal the moon from the sky. But he
+          has a tough time staying on task after three orphans land in his
+          care.
+        </p>
+        <button class="btn btn-md">Play</button>
+      </div>
+      <div class="synopsis jumbotron" style="background-image: url('./thumbnails/children/small (1).jpg')">
+        <p class="title">
+          Frozen <img src="../icons/close.png" alt="close" />
+        </p>
+        <p class="text">
+          When the newly crowned Queen Elsa accidentally uses her power to
+          turn things into ice to curse her home in infinite winter, her
+          sister Anna teams up with a mountain man, his playful reindeer, and
+          a snowman to change the weather condition.
+        </p>
+        <button class="btn btn-md">Play</button>
+      </div>
+      <div class="synopsis jumbotron" style="background-image: url('./thumbnails/children/small (2).jpg')">
+        <p class="title">
+          Hotel Transylvania <img src="../icons/close.png" alt="close" />
+        </p>
+        <p class="text">
+          Hotel Transylvania owner Dracula pulls double duty as an
+          overprotective dad when an unwelcome suitor shows interest in his
+          teenage daughter.
+        </p>
+        <button class="btn btn-md">Play</button>
+      </div>
+      <div class="synopsis jumbotron" style="background-image: url('./thumbnails/children/small (3).jpg')">
+        <p class="title">
+          Spirited Away <img src="../icons/close.png" alt="close" />
+        </p>
+        <p class="text">
+          Chihiro wanders into a magical world where a witch rules -- and
+          those who disobey her are turned into animals.
+        </p>
+        <button class="btn btn-md">Play</button>
+      </div>
+      <div class="synopsis jumbotron" style="background-image: url('./thumbnails/children/small (4).jpg')">
+        <p class="title">Up <img src="../icons/close.png" alt="close" /></p>
+        <p class="text">
+          Seventy-eight year old Carl Fredricksen travels to Paradise Falls in
+          his home equipped with balloons, inadvertently taking a young
+          stowaway.
+        </p>
+        <button class="btn btn-md">Play</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="jumbotron">
+    <div class="container">
+      <p>
+        Questions?
+        <a href="https://www.netflix.com" target="_blank">Original Website</a>
+      </p>
+
+      <ul>
+        <li>FAQ</li>
+        <li>Account</li>
+        <li>Help Centre</li>
+        <li>Media Centre</li>
+        <li>Investor Relations</li>
+        <li>Jobs</li>
+        <li>Ways to Watch</li>
+        <li>Terms of Use</li>
+        <li>Privacy</li>
+        <li>Cookie Preferences</li>
+        <li>Corporate Information</li>
+        <li>Contact Us</li>
+        <li>Speed Test</li>
+        <li>Legal Notices</li>
+        <li>Only on Netflix</li>
+      </ul>
+      <p class="clone">
+        Netflix : Cloned by Harshit Lakshakar <br />as Frontend Project.
+        <br />
+        Email : harshit130902@gmail.com
+      </p>
+    </div>
+  </footer>
+  <script type="text/javascript" src="browse.js"></script>
+</body>
+
 </html>

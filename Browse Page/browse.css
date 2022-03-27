@@ -265,8 +265,9 @@ footer .clone {
   transition: 0.5s;
 }
 
-.popup video {
+.popup iframe {
   width: 70%;
+  height: 68%;
 }
 
 .popup img {
@@ -322,7 +323,8 @@ footer .clone {
     width: 100%;
     margin: 0 0 1rem 0;
   }
-  .popup video {
+  .popup iframe {
+    height: 45%;
     width: 90%;
   }
   .popup img {
